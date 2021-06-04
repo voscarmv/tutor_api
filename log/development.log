@@ -1420,3 +1420,115 @@ Processing by RegistrationsController#create as */*
 Completed 201 Created in 289ms (Views: 0.8ms | ActiveRecord: 14.4ms | Allocations: 5582)
 
 
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 13:47:11 -0500
+  [1m[35m (43.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 1190ms (ActiveRecord: 2.8ms | Allocations: 13064)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 13:55:17 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 303ms (ActiveRecord: 1.0ms | Allocations: 3054)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 13:55:52 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 614ms (ActiveRecord: 1.3ms | Allocations: 2579)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 13:56:52 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar3@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar3@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar3@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (7.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES (?, ?, ?, ?, ?)[0m  [["email", "oscar3@mail.com"], ["encrypted_password", "$2a$12$jgz/zlXV30LBSzjFsF53VuMgH47eDFLtizKf8p2AQ.LgTmKAu1/sC"], ["created_at", "2021-06-04 18:56:52.613950"], ["updated_at", "2021-06-04 18:56:52.613950"], ["jti", "d79309b1-561a-437b-b863-ad6dd04bf38d"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 568ms (Views: 7.1ms | ActiveRecord: 22.5ms | Allocations: 5089)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 14:00:34 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 457ms (ActiveRecord: 1.2ms | Allocations: 2576)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 14:00:56 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 626ms (ActiveRecord: 1.0ms | Allocations: 2556)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-06-04 14:01:05 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar4@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar4@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar4@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES (?, ?, ?, ?, ?)[0m  [["email", "oscar4@mail.com"], ["encrypted_password", "$2a$12$5cbYGeTUQD.4AmKxdo4W0Oz9ap4GlSnsNCSmnA2dDTJ0UeQXPAedS"], ["created_at", "2021-06-04 19:01:06.521163"], ["updated_at", "2021-06-04 19:01:06.521163"], ["jti", "0c61c77a-6c18-42dd-9aff-81ccf32e8f51"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (19.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 765ms (Views: 1.5ms | ActiveRecord: 23.5ms | Allocations: 3241)
+
+
