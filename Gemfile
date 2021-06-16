@@ -6,6 +6,7 @@ ruby '3.0.0'
 # Authentication
 gem 'devise'
 gem 'devise-jwt'
+gem 'fast_jsonapi'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'

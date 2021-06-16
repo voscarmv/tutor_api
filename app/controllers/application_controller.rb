@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base
           head :unauthorized
         end
       end
+    else
+      head :unauthorized
     end
   end
 end
