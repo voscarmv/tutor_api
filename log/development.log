@@ -6544,3 +6544,241 @@ Filter chain halted as :authenticate_user rendered or redirected
 Completed 401 Unauthorized in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 408)
 
 
+Started POST "/login" for 127.0.0.1 at 2021-06-16 17:52:07 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 9140)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-16 17:52:07 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 208ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1460)
+
+
+Started GET "/appointments" for ::1 at 2021-06-16 17:52:45 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.8ms | Allocations: 4070)
+
+
+Started GET "/appointments" for ::1 at 2021-06-16 17:52:58 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 223)
+
+
+Started GET "/appointments" for ::1 at 2021-06-16 17:53:07 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1301)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:02 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 264ms (Views: 0.4ms | ActiveRecord: 11.5ms | Allocations: 6577)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:03 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1456)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:11 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 208ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1469)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:11 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 221ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1460)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:21 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.2ms | Allocations: 1084)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 233ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 646)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:15:21 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 204ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 376)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:17:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 206ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:17:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 204ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 376)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:19:27 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 2.0ms | Allocations: 3131)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 212ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 3919)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:19:27 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 204ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/login" for ::1 at 2021-06-17 15:21:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"something", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"something", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "something"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 1.7ms | Allocations: 3128)
+
+
+Processing by SessionsController#new as HTML
+  Parameters: {"user"=>{"email"=>"something", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"something", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 207ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3881)
+
+
+Started POST "/login" for ::1 at 2021-06-17 15:22:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 218ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 1644)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:30:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.8ms | Allocations: 1907)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 204ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:30:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 204ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:31:21 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.4ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 203ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 405)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:31:22 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2345354@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2345354@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 205ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:31:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"aslkaf@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"aslkaf@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aslkaf@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.4ms | Allocations: 1069)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"aslkaf@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"aslkaf@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 208ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 405)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:33:27 -0500
+  [1m[35m (20.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 391ms (Views: 0.7ms | ActiveRecord: 1.5ms | Allocations: 9354)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-17 15:33:29 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 209ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1552)
+
+
