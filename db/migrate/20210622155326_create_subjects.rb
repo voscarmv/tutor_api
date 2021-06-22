@@ -4,6 +4,7 @@ class CreateSubjects < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :tutor
       t.text :description
+      t.string :tutorpic
 
       t.timestamps
     end

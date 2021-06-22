@@ -4,8 +4,10 @@ one:
   name: MyString
   tutor: MyString
   description: MyText
+  tutorpic: MyString
 
 two:
   name: MyString
   tutor: MyString
   description: MyText
+  tutorpic: MyString
