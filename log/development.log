@@ -7642,3 +7642,165 @@ Migrating to CreateSubjects (20210622155326)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mSubject Create (0.7ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "tutor", "description", "tutorpic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Science"], ["tutor", "Annie Easley"], ["description", "Computer science is the study of algorithmic processes, computational machines and computation itself. As a discipline, computer science spans a range of topics from theoretical studies of algorithms, computation and information to the practical issues of implementing computational systems in hardware and software."], ["tutorpic", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Annie_Easley.jpg/800px-Annie_Easley.jpg"], ["created_at", "2021-06-22 19:13:52.756943"], ["updated_at", "2021-06-22 19:13:52.756943"]]
   [1m[36mTRANSACTION (16.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-06-22 18:32:16 -0500
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/oscar/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/oscar/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 85.9ms | Allocations: 360)
+Completed 200 OK in 200ms (Views: 121.1ms | ActiveRecord: 0.0ms | Allocations: 2842)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-06-22 19:43:45 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES (?, ?, ?, ?, ?)[0m  [["email", "oscar@mail.com"], ["encrypted_password", "$2a$12$ibY.qA8qupjg.VxS2oiCxu8HoePVUr1LmImT3w0FS9rLlZLerQprm"], ["created_at", "2021-06-23 00:43:45.959608"], ["updated_at", "2021-06-23 00:43:45.959608"], ["jti", "6309ef83-f2b0-4d35-986c-4c0a241c6506"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (56.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 804ms (Views: 2.3ms | ActiveRecord: 63.9ms | Allocations: 12554)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-22 19:43:54 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 503ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 2285)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:44:02 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.9ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 2.5ms | Allocations: 4068)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:47:56 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 1090)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:48:01 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1077)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:48:34 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1077)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-06-22 19:48:56 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 16ms (Views: 1.6ms | ActiveRecord: 1.5ms | Allocations: 1137)
+
+
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (15.8ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "efc5ead7-d81f-492c-8c06-b64dd6c7e11e"], ["id", 1]]
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:49:03 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1076)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:49:12 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 1077)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:51:06 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1077)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:51:51 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 20.8ms | ActiveRecord: 1.1ms | Allocations: 1052)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-06-22 19:51:57 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 583ms (Views: 0.7ms | ActiveRecord: 6.6ms | Allocations: 6062)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:52:02 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:52:15 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:54:21 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.5ms | Allocations: 4097)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-06-22 19:54:32 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 992)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (9.2ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "1ac616ec-a455-402c-8bc7-2923b174ca55"], ["id", 1]]
+Started GET "/subjects" for 127.0.0.1 at 2021-06-22 19:54:36 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
