@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  subject: MyText
-  city: MyText
-  date: 2021-04-19
+  city: MyString
+  subject: one
+  user: one
 
 two:
-  subject: MyText
-  city: MyText
-  date: 2021-04-19
+  city: MyString
+  subject: two
+  user: two

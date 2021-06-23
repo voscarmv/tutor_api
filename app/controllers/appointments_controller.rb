@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
   before_action :authenticate_user
-  before_action :authorize_request, :set_appointment, only: [:show, :update, :destroy]
+  before_action :set_appointment, only: [:show, :update, :destroy]
 
   # GET /appointments
   def index
@@ -47,6 +47,6 @@ class AppointmentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def appointment_params
-      params.require(:appointment).permit(:subject, :city, :date)
+      params.require(:appointment).permit(:city, :subject_id, :user_id)
     end
 end
