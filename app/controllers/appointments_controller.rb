@@ -4,7 +4,7 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments
   def index
-    @appointments = Appointment.all
+    @appointments = Appointment.where({user_id: current_user.id})
 
     render json: @appointments
   end
@@ -47,6 +47,6 @@ class AppointmentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def appointment_params
-      params.require(:appointment).permit(:city, :subject_id, :user_id)
+      params.require(:appointment).permit(:city, :date, :subject_id, :user_id)
     end
 end
