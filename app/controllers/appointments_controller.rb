@@ -4,9 +4,9 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments
   def index
-    @appointments = Appointment.where({user_id: current_user.id})
+    @appointments = Appointment.where({user_id: current_user.id}).includes(:subject)
 
-    render json: @appointments
+    render json: @appointments, include: :subject
   end
 
   # GET /appointments/1

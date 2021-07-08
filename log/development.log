@@ -8420,3 +8420,290 @@ Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 984)
 
   [1m[35m (21.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/appointments" for ::1 at 2021-07-04 20:00:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 1.0ms | Allocations: 168)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-04 20:06:01 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 548ms (Views: 1.0ms | ActiveRecord: 0.9ms | Allocations: 5534)
+
+
+Started GET "/appointments" for ::1 at 2021-07-04 20:07:18 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 21ms (Views: 11.2ms | ActiveRecord: 0.9ms | Allocations: 4703)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-07-04 20:07:42 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 1.9ms | Allocations: 868)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (14.5ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "1ef413f3-2ffe-4450-95e3-43e1b64c58cb"], ["id", 1]]
+Started POST "/signup" for 127.0.0.1 at 2021-07-04 20:07:53 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES (?, ?, ?, ?, ?)[0m  [["email", "oscar2@mail.com"], ["encrypted_password", "$2a$12$Vd.zVQUPjWOg8r1I99uM6.vah4XvsjSOjlMVuamTNzGvKilJRW8ue"], ["created_at", "2021-07-05 01:07:54.221209"], ["updated_at", "2021-07-05 01:07:54.221209"], ["jti", "800ad24a-d47a-468a-9eb8-2620759ded46"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (87.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 674ms (Views: 0.7ms | ActiveRecord: 90.5ms | Allocations: 4943)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-04 20:08:05 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar2@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar2@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 524ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1555)
+
+
+Started GET "/appointments" for ::1 at 2021-07-04 20:08:33 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 1534)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-08 13:36:13 -0500
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 398ms (Views: 1.1ms | ActiveRecord: 1.3ms | Allocations: 9358)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-08 13:37:07 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 208ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1570)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:37:35 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 2.2ms | Allocations: 5086)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:37:42 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 1783)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:39:23 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 1768)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:40:14 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.8ms | Allocations: 1771)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:40:19 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 1783)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:42:38 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1767)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 13:42:43 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1767)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:35:55 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 116ms (Views: 115.2ms | Allocations: 2138)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-08 16:36:12 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 215ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2406)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:36:14 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1808)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:36:36 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.7ms | Allocations: 1767)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:48:24 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.0ms | Allocations: 8946)
+
+
+  
+ActiveRecord::AssociationNotFoundError (Association named 'subjects' was not found on Appointment; perhaps you misspelled it?
+Did you mean?  subject
+               user):
+  
+app/controllers/appointments_controller.rb:9:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:49:00 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 105ms (Views: 90.9ms | ActiveRecord: 5.7ms | Allocations: 14751)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:55:29 -0500
+  
+SyntaxError (/home/oscar/tutor_api/app/controllers/appointments_controller.rb:9: syntax error, unexpected '}', expecting =>
+...intments, include: { :subject }
+...                              ^
+/home/oscar/tutor_api/app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/appointments_controller.rb:9: syntax error, unexpected '}', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/appointments_controller.rb:9: syntax error, unexpected '}', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:55:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 1.4ms | Allocations: 12538)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:58:07 -0500
+  
+SyntaxError (/home/oscar/tutor_api/app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+...ointments, include: { :subject, only: :name }
+...                              ^
+/home/oscar/tutor_api/app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:58:32 -0500
+  
+SyntaxError (/home/oscar/tutor_api/app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+...ntments, include => { :subject, only: :name }
+...                              ^
+/home/oscar/tutor_api/app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/appointments_controller.rb:9: syntax error, unexpected ',', expecting =>
+app/controllers/appointments_controller.rb:52: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/appointments" for 127.0.0.1 at 2021-07-08 16:58:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 3.9ms | Allocations: 13433)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-08 17:00:09 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1312)
+
+
