@@ -9402,3 +9402,354 @@ Filter chain halted as :authenticate_user rendered or redirected
 Completed 401 Unauthorized in 10ms (Views: 5.0ms | Allocations: 235)
 
 
+Started POST "/login" for 127.0.0.1 at 2021-07-14 22:40:04 -0500
+  [1m[35m (18.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 817ms (Views: 2.2ms | ActiveRecord: 2.5ms | Allocations: 9355)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:40:21 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 2.8ms | Allocations: 4290)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:46:14 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 241ms (Views: 240.7ms | Allocations: 2138)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-14 22:46:18 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 387ms (Views: 0.7ms | ActiveRecord: 4.6ms | Allocations: 2417)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:46:22 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.6ms | Allocations: 1257)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:49:22 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-14 22:49:25 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 534ms (Views: 1.2ms | ActiveRecord: 0.9ms | Allocations: 1552)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:49:30 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1236)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-14 22:54:36 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 517ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1552)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-14 22:54:39 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (1.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (1.6ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (?, ?, ?)[0m  [[nil, 1], [nil, 2], [nil, 3]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 187ms (Views: 173.9ms | ActiveRecord: 7.1ms | Allocations: 8635)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:54:41 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1226)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-14 22:54:54 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 531ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1555)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 22:54:57 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 1225)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-07-14 23:01:29 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 41ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 1405)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (8.0ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "6b69aadf-1719-45c2-ab16-c8e11ab00ade"], ["id", 1]]
+Started POST "/login" for 127.0.0.1 at 2021-07-14 23:01:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 545ms (Views: 0.8ms | ActiveRecord: 1.2ms | Allocations: 1578)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-07-14 23:01:46 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 80ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 862)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (7.9ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "57aca93d-f040-4bb7-9aae-4114e7bd461e"], ["id", 1]]
+Started GET "/subjects" for 127.0.0.1 at 2021-07-14 23:02:01 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 238)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-14 23:02:03 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 11:35:43 -0500
+  [1m[35m (20.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 841ms (Views: 2.5ms | ActiveRecord: 2.7ms | Allocations: 9355)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 11:36:05 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 609ms (Views: 0.8ms | ActiveRecord: 1.2ms | Allocations: 1570)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 11:52:19 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 601ms (Views: 0.9ms | ActiveRecord: 6.4ms | Allocations: 2413)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 11:57:33 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 698ms (Views: 1.1ms | ActiveRecord: 1.0ms | Allocations: 1565)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 11:59:24 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 581ms (Views: 0.9ms | ActiveRecord: 1.4ms | Allocations: 1565)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 12:19:39 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 569ms (Views: 0.9ms | ActiveRecord: 3.8ms | Allocations: 2389)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-07-16 12:19:46 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 1142)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (21.3ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "4748442d-5c6c-4154-84f7-7c9cd68593ec"], ["id", 1]]
+Started POST "/signup" for 127.0.0.1 at 2021-07-16 12:20:08 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar3@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar3@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oscar3@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 767ms (ActiveRecord: 0.9ms | Allocations: 6161)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/login" for 127.0.0.1 at 2021-07-16 12:20:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 622ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 1555)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-07-16 12:20:45 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 861)
+
+
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (81.8ms)[0m  [1m[33mUPDATE "users" SET "jti" = ? WHERE "users"."id" = ?[0m  [["jti", "de56cace-e592-4c8f-b95b-1d7522b5fd3c"], ["id", 1]]
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 12:20:49 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 90ms (Views: 88.0ms | ActiveRecord: 1.2ms | Allocations: 1045)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-16 12:20:51 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 2.9ms | ActiveRecord: 1.4ms | Allocations: 456)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-07-16 12:20:55 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 597ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 1555)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 12:20:58 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (1.0ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 2.1ms | Allocations: 4204)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 17:33:42 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 2.0ms | Allocations: 1813)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-16 17:37:22 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (1.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (?, ?, ?)[0m  [[nil, 1], [nil, 2], [nil, 3]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 192ms (Views: 181.7ms | ActiveRecord: 3.8ms | Allocations: 9517)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 17:37:28 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 1226)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-16 17:37:30 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.9ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (?, ?, ?)[0m  [[nil, 1], [nil, 2], [nil, 3]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 1.6ms | Allocations: 3863)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 17:37:37 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 1226)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-07-16 17:40:49 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:7:in `index'
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+  [1m[36mSubject Load (0.8ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" IN (?, ?, ?)[0m  [[nil, 1], [nil, 2], [nil, 3]]
+  ↳ app/controllers/appointments_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 1.7ms | Allocations: 3860)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-07-16 17:40:51 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (1.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 1.1ms | Allocations: 1226)
+
+
