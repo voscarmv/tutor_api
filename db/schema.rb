@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2021_06_24_020032) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "appointments", force: :cascade do |t|
     t.string "city"
     t.datetime "date"
-    t.integer "subject_id", null: false
-    t.integer "user_id", null: false
+    t.bigint "subject_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["subject_id"], name: "index_appointments_on_subject_id"
