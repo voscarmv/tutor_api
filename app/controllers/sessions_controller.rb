@@ -2,10 +2,7 @@ class SessionsController < Devise::SessionsController
   respond_to :json
   private
   def respond_with(resource, _opts = {})
-    puts "THIS IS THE RESOURCE ID"
-    puts !resource.id.nil?
     if !resource.id.nil?
-      puts "IM IN!"
       render json: resource
     else
       render json: {
