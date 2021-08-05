@@ -9892,3 +9892,754 @@ Processing by AppointmentsController#index as */*
 Completed 200 OK in 24ms (Views: 17.1ms | ActiveRecord: 1.7ms | Allocations: 2935)
 
 
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:09:42 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:10:01 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:10:49 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is starting up
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:10:53 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is starting up
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:11:08 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is starting up
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:11:10 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is starting up
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:11:25 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is starting up
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (302.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (298.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (4255.7ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (4534.3ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (43.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20210419144112)
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210419144112"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddJtiToUser (20210419144531)
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "users" ADD "jti" character varying[0m
+  [1m[35m (21.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_jti" ON "users" ("jti")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210419144531"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubjects (20210622155326)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.7ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "tutor" character varying, "description" text, "tutorpic" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210622155326"]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAppointments (20210624020032)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.1ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "city" character varying, "date" timestamp, "subject_id" bigint NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_48f94364d5"
+FOREIGN KEY ("subject_id")
+  REFERENCES "subjects" ("id")
+, CONSTRAINT "fk_rails_9e31213785"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE INDEX "index_appointments_on_subject_id" ON "appointments" ("subject_id")[0m
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE INDEX "index_appointments_on_user_id" ON "appointments" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210624020032"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-05 19:12:16.883217"], ["updated_at", "2021-08-05 19:12:16.883217"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Create (6.8ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "tutor", "description", "tutorpic", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mathematics"], ["tutor", "Srinivasa Ramanujan"], ["description", "Mathematicians seek and use patterns to formulate new conjectures; they resolve the truth or falsity of such by mathematical proof. When mathematical structures are good models of real phenomena, mathematical reasoning can be used to provide insight or predictions about nature. Through the use of abstraction and logic, mathematics developed from counting, calculation, measurement, and \nthe systematic study of the shapes and motions of physical objects. Practical mathematics has been a human activity from as far back as written records exist. The research required to solve mathematical problems can take years or even centuries of sustained inquiry."], ["tutorpic", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Srinivasa_Ramanujan_-_OPC_-_1.jpg/800px-Srinivasa_Ramanujan_-_OPC_-_1.jpg"], ["created_at", "2021-08-05 19:12:23.176204"], ["updated_at", "2021-08-05 19:12:23.176204"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Create (0.4ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "tutor", "description", "tutorpic", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Physics"], ["tutor", "Albert Einstein"], ["description", "Physics is one of the oldest academic disciplines and, through its inclusion of astronomy, perhaps the oldest. Over much of the past two millennia, physics, chemistry, biology, and certain branches of mathematics were a part of natural philosophy, but during the Scientific Revolution in the 17th century these natural sciences emerged as unique research endeavors in their own right. Physics intersects with many interdisciplinary areas of research, such as biophysics and quantum chemistry, and the boundaries of physics are not rigidly defined. New ideas in physics often explain the fundamental mechanisms studied by other sciences and suggest new avenues of research in academic disciplines such as mathematics and philosophy."], ["tutorpic", "https://upload.wikimedia.org/wikipedia/commons/6/6f/Einstein-formal_portrait-35.jpg"], ["created_at", "2021-08-05 19:12:23.193064"], ["updated_at", "2021-08-05 19:12:23.193064"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "tutor", "description", "tutorpic", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Computer Science"], ["tutor", "Annie Easley"], ["description", "Computer science is the study of algorithmic processes, computational machines and computation itself. As a discipline, computer science spans a range of topics from theoretical studies of algorithms, computation and information to the practical issues of implementing computational systems in hardware and software."], ["tutorpic", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Annie_Easley.jpg/800px-Annie_Easley.jpg"], ["created_at", "2021-08-05 19:12:23.196472"], ["updated_at", "2021-08-05 19:12:23.196472"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:12:35 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar7@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar7@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (22.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar7@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar7@mail.com"], ["encrypted_password", "$2a$12$71tOJJ5Apg6kWcU1CsaefO.5e9WRVL6Xc23R4YES4i5kCEVQ1RYzW"], ["created_at", "2021-08-05 19:12:37.140766"], ["updated_at", "2021-08-05 19:12:37.140766"], ["jti", "8cdc40c8-eb18-49b1-a5eb-c955b6d774dc"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (63.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 447ms (Views: 0.6ms | ActiveRecord: 91.0ms | Allocations: 11138)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:12:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar7@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar7@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar7@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 228ms (Views: 0.6ms | ActiveRecord: 1.0ms | Allocations: 2351)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-08-05 14:12:53 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1153)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "947024d7-59e9-4f09-9a27-6259e27ead24"], ["id", 1]]
+Started GET "/subjects" for 127.0.0.1 at 2021-08-05 14:12:57 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 56ms (Views: 55.3ms | ActiveRecord: 1.1ms | Allocations: 1043)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-08-05 14:12:59 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.6ms | ActiveRecord: 1.0ms | Allocations: 456)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-08-05 14:13:07 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-08-05 14:13:08 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-08-05 14:13:14 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:13:21 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar121212121@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.4ms | Allocations: 1120)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 208ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:27:10 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (31.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar121212121@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 117ms (ActiveRecord: 84.0ms | Allocations: 3149)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 205ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 405)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:27:16 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar121212121@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:38:30 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (Allocations: 194)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 371)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:38:34 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 75ms (ActiveRecord: 41.4ms | Allocations: 3140)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 203ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:38:44 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (6.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar@mail.com"], ["encrypted_password", "$2a$12$qb9KSYY279nfs4P4X4tyPemWy2MNoBlu7hIjj7wQnaTaPdFo.V07e"], ["created_at", "2021-08-05 19:38:44.394010"], ["updated_at", "2021-08-05 19:38:44.394010"], ["jti", "a48c3bcb-30e2-400b-977f-dcb763a052b5"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 234ms (Views: 0.3ms | ActiveRecord: 21.9ms | Allocations: 2934)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:38:52 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 211ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 1565)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:40:00 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:45:02 -0500
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 302ms (Views: 0.2ms | ActiveRecord: 69.6ms | Allocations: 9321)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:16:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:46:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 219ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 6033)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:18:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:47:06 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 221ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 6043)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:18:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:47:35 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 214ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 6019)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:18:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:47:46 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 221ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 6081)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:18:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:48:03 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 221ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 6010)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:19:in `respond_with'
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:48:34 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 217ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 5970)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:49:13 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar999@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.4ms | Allocations: 1108)
+
+
+Processing by SessionsController#new as */*
+  Parameters: {"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 213ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1788)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:58:33 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 233ms (Views: 1.5ms | ActiveRecord: 4.9ms | Allocations: 9432)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-08-05 14:59:12 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:19:in `respond_to_on_destroy'
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1175)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Update (20.4ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "ef8f23b4-58aa-4adb-b109-aba81e823c6b"], ["id", 2]]
+Started GET "/subjects" for 127.0.0.1 at 2021-08-05 14:59:15 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 4.8ms | ActiveRecord: 1.2ms | Allocations: 1043)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-08-05 14:59:17 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 456)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:59:20 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 211ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1589)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-05 14:59:24 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+Completed 200 OK in 232ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1569)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 14:59:29 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 409ms (ActiveRecord: 6.3ms | Allocations: 6188)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
