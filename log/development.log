@@ -10643,3 +10643,110 @@ Completed 422 Unprocessable Entity in 409ms (ActiveRecord: 6.3ms | Allocations: 
 ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
   
 app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:41:12 -0500
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (35.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 299ms (ActiveRecord: 51.4ms | Allocations: 13068)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:41:19 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar9@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar9@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar9@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (5.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar9@mail.com"], ["encrypted_password", "$2a$12$9K8M41VVcrtJscveZL8ZYe8//Xjj6ILI.V5EJjIUip5Pzn72lR3U."], ["created_at", "2021-08-06 00:41:20.099705"], ["updated_at", "2021-08-06 00:41:20.099705"], ["jti", "693e9980-2685-4d12-b3ff-1e3e8384438c"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 238ms (Views: 0.4ms | ActiveRecord: 15.3ms | Allocations: 3500)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:42:21 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar99@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar99@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar99@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (24.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar99@mail.com"], ["encrypted_password", "$2a$12$VJxK9FxyWJWRbqE2/NhsbeKmAoDVPQfKyMGoAwncCblP9rWQaK8py"], ["created_at", "2021-08-06 00:42:21.623335"], ["updated_at", "2021-08-06 00:42:21.623335"], ["jti", "594a01eb-2d05-4654-93b9-5cc9fe7162f2"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (25.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 274ms (Views: 0.5ms | ActiveRecord: 53.5ms | Allocations: 7540)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:43:50 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar999@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar999@mail.com"], ["encrypted_password", "$2a$12$guZyK0w7l7xWp.uloSm/TeiAOXQ/OF2KtIXYutBK1tZ13Tx.ePM8q"], ["created_at", "2021-08-06 00:43:50.853859"], ["updated_at", "2021-08-06 00:43:50.853859"], ["jti", "fc656c49-cb19-4e79-9a96-a831d572890b"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 9.3ms | Allocations: 10286)
+
+
+  
+NameError (undefined local variable or method `console' for #<RegistrationsController:0x0000000000a898>):
+  
+app/controllers/registrations_controller.rb:6:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:44:08 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar999@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar999@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 216ms (ActiveRecord: 4.4ms | Allocations: 7094)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:44:15 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar9999@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar9999@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar9999@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar9999@mail.com"], ["encrypted_password", "$2a$12$VgDWI96h7L3ohlh3VK3bYeEALARyPIqwGS4x5iwtt4eKvm8VNHd0e"], ["created_at", "2021-08-06 00:44:16.104105"], ["updated_at", "2021-08-06 00:44:16.104105"], ["jti", "2802c721-0dad-4ba9-b8b7-0a817bbb49d1"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 234ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 3070)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-05 19:45:56 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"oscar99999@mail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"oscar99999@mail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar99999@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "oscar99999@mail.com"], ["encrypted_password", "$2a$12$BAucqCALQzYP/DkIYbZKj.iDhnEllnsHqsPfZWoSS4U07K0sw4tVO"], ["created_at", "2021-08-06 00:45:56.679820"], ["updated_at", "2021-08-06 00:45:56.679820"], ["jti", "fb5220be-a2e2-45f7-9490-a6a9f316f91e"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 201 Created in 226ms (Views: 0.5ms | ActiveRecord: 4.1ms | Allocations: 7668)
+
+
