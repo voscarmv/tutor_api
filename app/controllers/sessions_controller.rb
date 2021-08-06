@@ -10,7 +10,6 @@ class SessionsController < Devise::SessionsController
         message: "Please check your credentials and try again."
       }, status: :unauthorized
     end
-    # render json: resource
  end 
   def respond_to_on_destroy
     if current_user
