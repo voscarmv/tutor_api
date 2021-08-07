@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://60f6062426d78d008ee480ef--pensive-leavitt-100e0b.netlify.app'
+    origins 'https://610dfffcb5095f00070f3ab3--pensive-leavitt-100e0b.netlify.app'
 
     resource '*',
       expose: ['authorization', 'access-control-expose-headers', 'access-token', 'expiry', 'token-type', 'uid', 'client'],
