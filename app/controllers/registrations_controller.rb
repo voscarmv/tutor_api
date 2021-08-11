@@ -14,7 +14,7 @@ class RegistrationsController < ApplicationController
       token = encode_token(payload)
       render json: { id: user.id, email: user.email, key: token }
     else
-      render json: { errors: "NO." }, status: :not_acceptable
+      render json: { exception: "User parameters not valid. Please change email and/or password." }, status: :not_acceptable
     end
   end
   private
