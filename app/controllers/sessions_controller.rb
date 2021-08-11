@@ -1,27 +1,21 @@
-class SessionsController < Devise::SessionsController
+class SessionsController < ApplicationController
   respond_to :json
+  def create
+    user = User.find_by(email: user_params['email']) 
+    if user && user.authenticate(params[:password])
+      payload = {user_id: user.id}
+      token = encode_token(payload)
+      render json: {id: user.id, email: user.email, key: token};
+    else
+      render json: {failure: "Log in failed! Username or password invalid!"}
+    end
+  end
+  def destroy
+    @current_user_id = nil
+    render json: { message: "logged out" }
+  end
   private
-  def respond_with(resource, _opts = {})
-    if !resource.id.nil?
-      render json: resource
-    else
-      render json: {
-        status: 401,
-        message: "Please check your credentials and try again."
-      }, status: :unauthorized
-    end
- end 
-  def respond_to_on_destroy
-    if current_user
-      render json: {
-        status: 200,
-        message: "logged out successfully"
-      }, status: :ok
-    else
-      render json: {
-        status: 401,
-        message: "Couldn't find an active session."
-      }, status: :unauthorized
-    end
+  def user_params
+    params.permit(:email, :password)
   end
 end

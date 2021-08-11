@@ -1,6 +1,6 @@
 class SubjectsController < ApplicationController
   before_action :authenticate_user
-  before_action :set_subject, only: [:show, :update, :destroy]
+  # before_action :set_subject, only: [:show, :update, :destroy]
 
   # GET /subjects
   def index

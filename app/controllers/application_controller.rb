@@ -1,17 +1,42 @@
-class ApplicationController < ActionController::Base
-  skip_before_action :verify_authenticity_token
+class ApplicationController < ActionController::API
+
+  def encode_token(payload)
+    JWT.encode(payload, 'my_secret')
+  end
 
   def authenticate_user
     if request.headers['Authorization'].present?
-      authenticate_or_request_with_http_token do |token|
-      begin
-          jwt_payload = JWT.decode(token, Rails.application.credentials.jwt_secret).first
-          @current_user_id = jwt_payload['jti']
-        rescue JWT::ExpiredSignature, JWT::VerificationError, JWT::DecodeError
+      token = request.headers['Authorization']
+      puts request.headers['Authorization']
+        begin
+          jwt_payload = JWT.decode(token, 'my_secret', true, algorithm: 'HS256')          
+          user_id = jwt_payload[0]['user_id']
+          @current_user_id = user_id
+        rescue JWT::ExpiredSignature => e
+          puts "Exception class is #{e.class.name}"
+          puts "Exception message is #{e.message}"
+          puts "Exception backtrace is #{ e.backtrace}"
+          puts(token)
+
+          head :unauthorized
+        rescue JWT::VerificationError => e
+          puts "Exception class is #{e.class.name}"
+          puts "Exception message is #{e.message}"
+          puts "Exception backtrace is #{ e.backtrace}"        
+          puts(token)
+
+          head :unauthorized
+        rescue JWT::DecodeError => e
+          puts "Error"
+          puts "Exception class is #{e.class.name}"
+          puts "Exception message is #{e.message}"
+          puts "Exception backtrace is #{ e.backtrace}"
+          puts(token)
+
           head :unauthorized
         end
-      end
     else
+      puts "No header :("
       head :unauthorized
     end
   end

@@ -4,7 +4,7 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments
   def index
-    @appointments = Appointment.by_user(current_user.id)
+    @appointments = Appointment.by_user(@current_user_id)
     render json: @appointments, include: :subject
   end
 
