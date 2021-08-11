@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 
   def encode_token(payload)
-    JWT.encode(payload, 'my_secret')
+    JWT.encode(payload, Rails.application.credentials.jwt_secret)
   end
 
   def current_user
@@ -13,30 +13,10 @@ class ApplicationController < ActionController::API
       token = request.headers['Authorization']
       puts request.headers['Authorization']
         begin
-          jwt_payload = JWT.decode(token, 'my_secret', true, algorithm: 'HS256')          
+          jwt_payload = JWT.decode(token, Rails.application.credentials.jwt_secret, true, algorithm: 'HS256')          
           user_id = jwt_payload[0]['user_id']
           @current_user_id = user_id
-        rescue JWT::ExpiredSignature => e
-          puts "Exception class is #{e.class.name}"
-          puts "Exception message is #{e.message}"
-          puts "Exception backtrace is #{ e.backtrace}"
-          puts(token)
-
-          head :unauthorized
-        rescue JWT::VerificationError => e
-          puts "Exception class is #{e.class.name}"
-          puts "Exception message is #{e.message}"
-          puts "Exception backtrace is #{ e.backtrace}"        
-          puts(token)
-
-          head :unauthorized
-        rescue JWT::DecodeError => e
-          puts "Error"
-          puts "Exception class is #{e.class.name}"
-          puts "Exception message is #{e.message}"
-          puts "Exception backtrace is #{ e.backtrace}"
-          puts(token)
-
+        rescue JWT::ExpiredSignature, JWT::VerificationError, rescue JWT::DecodeError
           head :unauthorized
         end
     else
