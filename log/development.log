@@ -17844,3 +17844,446 @@ Processing by SessionsController#destroy as */*
 Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 94)
 
 
+Started POST "/login" for 127.0.0.1 at 2021-08-10 23:01:16 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2021-08-10 23:01:29 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2021-08-10 23:03:42 -0500
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  the database system is shutting down
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2021-08-10 23:04:29 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar333333333@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 949ms (Views: 0.5ms | ActiveRecord: 25.0ms | Allocations: 12054)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-08-10 23:04:33 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (2.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 5.4ms | Allocations: 4135)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-08-10 23:04:49 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-10 23:04:55 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"email"=>"sasdasdasdar@mail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"sasdasdasdar@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sasdasdasdar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 604)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:05:08 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+  [1m[36mUser Create (14.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar@mail.com"], ["created_at", "2021-08-11 04:05:08.752493"], ["updated_at", "2021-08-11 04:05:08.752493"], ["password_digest", "$2a$12$s3r4HTi5Gb4SQM8Cq2ve2OAY.8kM/Ls.4lrQ6y9hbcW8C.j0IrEHO"]]
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 533ms (ActiveRecord: 14.9ms | Allocations: 2723)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(oscar@mail.com) already exists.
+):
+  
+app/controllers/registrations_controller.rb:4:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:05:34 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:05:35.200401"], ["updated_at", "2021-08-11 04:05:35.200401"], ["password_digest", "$2a$12$cNT.vCH.pa760RkZBSV1t.WhJ7B4VEB72c5cvjmA/fQhCwNtxwH0u"]]
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 514ms (ActiveRecord: 2.1ms | Allocations: 2012)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(oscar333333333@mail.com) already exists.
+):
+  
+app/controllers/registrations_controller.rb:4:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:16:55 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (13.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:16:56.453606"], ["updated_at", "2021-08-11 04:16:56.453606"], ["password_digest", "$2a$12$2qhLTTdWF7jvPjvtsk6Ty.2nVOtPnrszHmgIBj5z4BFqJX2Osvyli"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 622ms (ActiveRecord: 28.6ms | Allocations: 11978)
+
+
+  
+NameError (undefined local variable or method `genericError' for #<RegistrationsController:0x00000000008700>):
+  
+app/controllers/registrations_controller.rb:6:in `rescue in create'
+app/controllers/registrations_controller.rb:4:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:17:58 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:17:59.443216"], ["updated_at", "2021-08-11 04:17:59.443216"], ["password_digest", "$2a$12$H5ju07zTw/95.u4Rq6//3uE5x7Sy4rc9e561bpjgbAxWR2dYsLG7S"]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 581ms (ActiveRecord: 25.0ms | Allocations: 8719)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:9:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:21:46 -0500
+  
+SyntaxError (/home/oscar/tutor_api/app/controllers/registrations_controller.rb:8: syntax error, unexpected ':', expecting '}'
+      render json { exception: e }
+                             ^
+/home/oscar/tutor_api/app/controllers/registrations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/registrations_controller.rb:8: syntax error, unexpected ':', expecting '}'
+app/controllers/registrations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/registrations_controller.rb:8: syntax error, unexpected ':', expecting '}'
+app/controllers/registrations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:22:11 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:22:11.783505"], ["updated_at", "2021-08-11 04:22:11.783505"], ["password_digest", "$2a$12$goXdQKODxavJfQhqhp/Fb.8FOBn/J4UxWn8VVxLLY4q7ar2AUy51."]]
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 566ms (Views: 0.6ms | ActiveRecord: 10.0ms | Allocations: 8824)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:10:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:23:44 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:23:44.854235"], ["updated_at", "2021-08-11 04:23:44.854235"], ["password_digest", "$2a$12$ysIxCKRCEsp75jFLD4PmXOvqALoV6XmUY.YJ/B.4DdLGcIPTAg9SK"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 540ms (ActiveRecord: 8.9ms | Allocations: 8682)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:24:22 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (12.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:24:23.857051"], ["updated_at", "2021-08-11 04:24:23.857051"], ["password_digest", "$2a$12$SjLk4P5JDmaMy.VQ74Rxy.nNJapi0WKjRhNKUOabX58OeWHbX5cRC"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 615ms (ActiveRecord: 22.6ms | Allocations: 13780)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:24:46 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:24:47.575879"], ["updated_at", "2021-08-11 04:24:47.575879"], ["password_digest", "$2a$12$UXMUMBCbbAtFIjLPz6hVfurH7gRSQaQjZP6kI6l0aLAduXuFcJqF6"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 550ms (ActiveRecord: 7.3ms | Allocations: 8697)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:25:47 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:25:48.406559"], ["updated_at", "2021-08-11 04:25:48.406559"], ["password_digest", "$2a$12$DRhnOhNUCKNyteJfxjyz0OkAQqfxJZabiX/Zty33bA1tnszH1B3DO"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 12.0ms | Allocations: 13782)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:12:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:27:09 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:27:09.948046"], ["updated_at", "2021-08-11 04:27:09.948046"], ["password_digest", "$2a$12$9fnQ8LVurCwIFd4ceiqMm.aFC1ZLKsl/3ctMBiVk0FAl1QVYdpzKC"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 562ms (Views: 0.6ms | ActiveRecord: 10.3ms | Allocations: 8868)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:16:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:27:29 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:27:30.697376"], ["updated_at", "2021-08-11 04:27:30.697376"], ["password_digest", "$2a$12$4k1EPVaqase6c/hIH5DwQ.P4DQW7wnu2UIzzQucWhzQvQmUTXNjuq"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 570ms (Views: 0.5ms | ActiveRecord: 9.5ms | Allocations: 8783)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:17:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:28:36 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar333333333@mail.com"], ["created_at", "2021-08-11 04:28:37.433199"], ["updated_at", "2021-08-11 04:28:37.433199"], ["password_digest", "$2a$12$K7hK7jJSMINH11pSKvtDF.nA7VRnEBvBsLgAj2EP3tq3IffSUu3se"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 200 OK in 558ms (Views: 0.4ms | ActiveRecord: 9.0ms | Allocations: 8347)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:29:37 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar@mail.com"], ["created_at", "2021-08-11 04:29:38.076047"], ["updated_at", "2021-08-11 04:29:38.076047"], ["password_digest", "$2a$12$Ir8QJ6xM7Mig6ds66V6ZW.3xcJKhm0QDu7OdysEjM92geFnoAm5gO"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 6.9ms | Allocations: 8682)
+
+
+  
+NoMethodError (undefined method `split' for #<ActiveRecord::RecordNotUnique: PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+DETAIL:  Key (email)=(oscar@mail.com) already exists.
+>):
+  
+app/controllers/registrations_controller.rb:11:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-08-10 23:29:57 -0500
+Processing by RegistrationsController#create as */*
+  Parameters: {"email"=>"oscar@mail.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"oscar@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :registration[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "oscar@mail.com"], ["created_at", "2021-08-11 04:29:58.435702"], ["updated_at", "2021-08-11 04:29:58.435702"], ["password_digest", "$2a$12$vgUjA6OVBP/P4/4/C5fbuuoWpr728ZUladWqDmsFVK6T/qOiNGJCO"]]
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `create'
+Completed 200 OK in 562ms (Views: 0.8ms | ActiveRecord: 9.6ms | Allocations: 8259)
+
+

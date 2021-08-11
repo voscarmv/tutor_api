@@ -1,8 +1,15 @@
 class RegistrationsController < ApplicationController
   respond_to :json
   def create
-    user = User.create(user_params) 
-    if user.valid?
+    err = ''
+    begin
+      user = User.create(user_params) 
+    rescue Exception => e
+      err =  e
+    end
+    if user == nil
+      render json: { exception: err }
+    elsif user.valid?
       payload = {user_id: user.id}
       token = encode_token(payload)
       render json: { id: user.id, email: user.email, key: token }
