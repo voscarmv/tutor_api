@@ -1,5 +1,5 @@
 # tutor_api
-API for tutor_appointments
+API for [tutor_appointments](https://github.com/voscarmv/tutor_appointments)
 
 Install with:
 
