@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://inspiring-darwin-0afe5b.netlify.app'
+    origins 'http://localhost:3000'
 
     resource '*',
       expose: ['authorization', 'access-control-expose-headers', 'access-token', 'expiry', 'token-type', 'uid', 'client'],
