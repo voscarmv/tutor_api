@@ -17647,3 +17647,41 @@ Processing by SubjectsController#index as */*
 Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1075)
 
 
+Started POST "/login" for 127.0.0.1 at 2021-08-10 21:09:51 -0500
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"oscar333333333@mail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (34.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "oscar333333333@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 306ms (Views: 0.2ms | ActiveRecord: 46.3ms | Allocations: 12062)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2021-08-10 21:09:52 -0500
+Processing by SubjectsController#index as */*
+  Parameters: {"subject"=>{}}
+  [1m[36mSubject Load (13.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:9:in `index'
+Completed 200 OK in 51ms (Views: 35.6ms | ActiveRecord: 15.7ms | Allocations: 4141)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2021-08-10 21:09:54 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mAppointment Load (19.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE "appointments"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/controllers/appointments_controller.rb:8:in `index'
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:8:in `index'
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:8:in `index'
+Completed 200 OK in 80ms (Views: 18.0ms | ActiveRecord: 23.0ms | Allocations: 10051)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-08-10 21:10:01 -0500
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 97)
+
+

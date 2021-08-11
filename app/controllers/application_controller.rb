@@ -4,6 +4,10 @@ class ApplicationController < ActionController::API
     JWT.encode(payload, 'my_secret')
   end
 
+  def current_user
+    User.find_by(id: @current_user_id)
+  end
+
   def authenticate_user
     if request.headers['Authorization'].present?
       token = request.headers['Authorization']
