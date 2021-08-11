@@ -9,6 +9,17 @@ class SubjectsController < ApplicationController
     render json: @subjects
   end
 
+  # POST /subjects
+  def create
+    @subject = Subject.new(subject_params)
+
+    if @subject.save
+      render json: @subject, status: :created, location: @subject
+    else
+      render json: @subject.errors, status: :unprocessable_entity
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_subject
